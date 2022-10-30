@@ -71,7 +71,7 @@ p{
     border-color: var(--secondary-color);
 }
 .section_heading{
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 .section_heading h2{
     font-size: 40px;
@@ -91,6 +91,9 @@ p{
 }
 .section_heading h2 span{
     color: var(--primary-color);
+}
+.section_heading p{
+    margin-top: 20px;
 }
 
 /* top header css  */
@@ -379,4 +382,92 @@ p{
 }
 .values_item:hover:before{
     transform: scaleY(0);
+}
+
+/* company css */
+#company{
+    padding: 70px 0;
+}
+
+.company_itme{
+    margin-bottom: 40px;
+}
+.company_itme img{
+    width: 50px;
+}
+.company_itme h3{
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+    text-transform: uppercase;
+}
+.company_itme p{
+    text-align: justify;
+}
+
+/* sustainability css */
+#sustainability{
+    padding: 70px 0;
+}
+.sustainability_right p{
+    margin-bottom: 30px;
+}
+.sustainability_right ul li{
+    color: rgb(116, 114, 114);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    position: relative;
+}
+.sustainability_right ul li i{
+    color: var(--primary-color);
+    position: absolute;
+    left: -30px;
+    top: 3px;
+}
+
+/* counter css */
+#counter_part{
+    padding: 100px 0;
+    background: url(../images/slider-2.jpg);
+    position: relative;
+    z-index: 1;
+}
+#counter_part:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+
+.counter_item{
+    display: flex;
+    align-items: center;
+}
+.counter_icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter_text{
+    margin-left: 20px;
+}
+.counter_item h2{
+    color: #fff;
+}
+.counter_item h3{
+    color: #ddd;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.counter_icon i{
+    font-size: 40px;
+    color: #fff;
 }
