@@ -520,3 +520,39 @@ p{
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
+
+/* footer css */
+#footer{
+    padding: 70px 0 20px 0;
+    background: #000;
+    margin-top: 50px;
+}
+
+.bottom_footer{
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+.footer_social{
+    text-align: right;
+}
+.footer_social li {
+    display: inline-block;
+}
+.footer_social li a{
+    color: #ddd;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    transition: .4s;
+}
+.footer_social li a:hover{
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.footer_copy p{
+    color: #ddd;
+}
