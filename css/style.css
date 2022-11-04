@@ -96,6 +96,23 @@ p{
     margin-top: 20px;
 }
 
+.section_bg_style{
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+.section_bg_style:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+
 /* top header css  */
 #top_header{
     background-color: rgba(0, 0, 0, .4);
@@ -424,23 +441,18 @@ p{
     left: -30px;
     top: 3px;
 }
+.sustainability_left{
+    padding-right: 60px;
+}
+.sustainability_left img{
+    border-radius: 20px;
+    
+}
 
 /* counter css */
 #counter_part{
     padding: 100px 0;
-    background: url(../images/slider-2.jpg);
-    position: relative;
-    z-index: 1;
-}
-#counter_part:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, .6);
-    z-index: -1;
+    
 }
 
 .counter_item{
@@ -470,4 +482,41 @@ p{
 .counter_icon i{
     font-size: 40px;
     color: #fff;
+}
+
+/* mission_vission css  */
+#mission_vission{
+    padding: 70px 0 40px 0;
+    background-color: #f1f1f1;
+}
+
+
+.vission_left_img {
+    text-align: center;
+}
+
+.vission_left_img img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+.mission{
+    display: flex;
+    margin-bottom: 40px;
+}
+.vission_icon i{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.vission_text h3{
+    letter-spacing: 2px;
+    margin-bottom: 15px;
 }
