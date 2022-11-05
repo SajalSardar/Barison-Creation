@@ -79,11 +79,12 @@ p{
     position: relative;
     padding-bottom: 10px;
 }
+.footer_contact h4:after,
 .section_heading h2:after{
     content: '';
     position: absolute;
     height: 3px;
-    width: 70px;
+    width: 60px;
     background-color: var(--primary-color);
     left: 0;
     bottom: 0;
@@ -524,7 +525,7 @@ p{
 /* footer css */
 #footer{
     padding: 70px 0 20px 0;
-    background: #000;
+    background: #061835;
     margin-top: 50px;
 }
 
@@ -555,4 +556,39 @@ p{
 }
 .footer_copy p{
     color: #ddd;
+}
+
+.footer_contact{
+    margin-bottom: 30px;
+}
+
+.footer_contact h4{
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.footer_contact  p{
+    color: #ddd;
+}
+.footer_contact .d-flex i{
+    color: #ddd;
+    padding:4px 8px 0 0;
+}
+
+.footer_contact ul li{
+    color: #ddd;
+    margin-bottom: 10px;
+}
+.footer_contact ul li i{
+    padding:4px 8px 0 0;
+}
+
+.footer_contact ul li a{
+    color: #ddd ;
+    display: block;
+    transition: .4s;
+}
+.footer_contact ul li a:hover{
+    color: var(--primary-color);
 }
