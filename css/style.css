@@ -71,7 +71,7 @@ p{
     border-color: var(--secondary-color);
 }
 .section_heading{
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .section_heading h2{
     font-size: 40px;
@@ -358,9 +358,14 @@ p{
     background-color: #f1f1f1;
 }
 .values_item {
-    border: 2px solid var(--primary-color);
     padding: 20px;
     position: relative;
+    background: #fff;
+    box-shadow: 0 5px 25px 0 rgb(214 215 216 / 50%);
+    transition: .4s;
+}
+.values_item:hover{
+    box-shadow: 0 5px 25px 0 rgb(214 215 216);
 }
 .values_item img{
     width: 100px;
@@ -369,37 +374,10 @@ p{
     text-transform: uppercase;
     margin-top: 15px;
     font-size: 18px;
-}
-.values_item:after{
-    content: '';
-    position: absolute;
-    height: 120px;
-    width: 2px;
-    top: 30px;
-    left: -2px;
-    background-color: #f1f1f1;
     transition: .4s;
-    transform-origin: bottom;
-    transform:scaleY(1);
 }
-.values_item:hover:after{
-    transform: scaleY(0);
-}
-
-.values_item:before{
-    content: '';
-    position: absolute;
-    height: 120px;
-    width: 2px;
-    bottom: 30px;
-    right: -2px;
-    background-color: #f1f1f1;
-    transition: .4s;
-    transform-origin: top;
-    transform:scaleY(1);
-}
-.values_item:hover:before{
-    transform: scaleY(0);
+.values_item:hover h3{
+    color: var(--primary-color);
 }
 
 /* company css */
@@ -417,6 +395,10 @@ p{
     font-size: 18px;
     margin: 20px 0 15px 0;
     text-transform: uppercase;
+    transition: .4s;
+}
+.company_itme:hover h3{
+    color: var(--primary-color);
 }
 .company_itme p{
     text-align: justify;
@@ -487,23 +469,27 @@ p{
 
 /* mission_vission css  */
 #mission_vission{
-    padding: 70px 0 40px 0;
+    padding: 70px 0 70px 0;
     background-color: #f1f1f1;
 }
 
-
+.mission_vission_row{
+    background-color: #fff;
+    padding: 17px 5px;
+    box-shadow: 0 5px 25px 0 rgb(214 215 216 / 60%);
+}
 .vission_left_img {
     text-align: center;
+    margin-right: 20px;
 }
 
-.vission_left_img img{
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
+.vission_left_img img{ 
+    width: 100%;
 }
 .mission{
     display: flex;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .vission_icon i{
     height: 70px;
@@ -520,6 +506,10 @@ p{
 .vission_text h3{
     letter-spacing: 2px;
     margin-bottom: 15px;
+    transition: .4s;
+}
+.mission:hover h3{
+    color: var(--primary-color);
 }
 
 /* footer css */
