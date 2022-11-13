@@ -719,3 +719,38 @@ p{
   .breadcrumb li a:hover{
     color: var(--primary-color);
   }
+
+  /* about page css  */
+  .about_page{
+    padding: 30px;
+  }
+  .about_page p{
+    padding-top: 15px;
+  }
+#about_page_block_main{
+    color: #fff;
+    padding-top: 60px;
+}
+.about_page_block_part{
+    background: #fff;
+    box-shadow: 0 5px 25px 0 rgb(214 215 216 / 60%);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.about_page_block_part img{
+    height: 300px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.block_content h3{
+    color: #000;
+    margin: 15px 0 10px 0;
+}
+
+.block_content .custom_btn{
+    font-size: 15px;
+    border: 1px solid var(--primary-color);
+    padding: 4px 10px;
+}
