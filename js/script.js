@@ -36,5 +36,11 @@ $(function($){
 
   });
 
+  //filter active button
+  $('.product_menu ul li').on('click', function(){
+    $('.product_menu ul li').removeClass('active');
+    $(this).addClass('active');
+  })
+
 
 });
