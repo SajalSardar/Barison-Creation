@@ -743,6 +743,10 @@ p{
     object-position: center;
     object-fit: cover;
 }
+.about_page img{
+    float: right;
+    margin: 10px 0 10px 20px;
+}
 
 .block_content h3{
     color: #000;
@@ -815,4 +819,34 @@ p{
 .product_menu ul li:hover{
     background: var(--primary-color);
     color: #fff;
+}
+
+/* gallery_page css */
+#gallery_page{
+    padding-top: 70px;
+}
+#profile_page{
+    padding: 50px 0;
+}
+
+#profile_page .about_page h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#profile_page .about_page h3 a{
+    border: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-top: 0;
+}
+#profile_page .about_page h3 a:hover{
+    background-color: var(--secondary-color);
+}
+
+#profile_page .about_page h3 a::before,
+#profile_page .about_page h3 a::after{
+    height: 0;
+    width: 0;
 }
